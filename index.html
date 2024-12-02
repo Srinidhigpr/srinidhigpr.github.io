@@ -1,22 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My First webpage</title>
-    </head>
-    <body>
-        <h1>About me </h1>
-        <p><i> Hi, I'm sinidhi </i></p>
-        <img
-            src="Student Immigration Across Europe 2017 - 2021 (1).png"
-            width="600px" height="600px"
-            onclick="window.location.href= 'https://public.tableau.com/app/profile/srinidhi.gopalraj/viz/StudentImmigrationandMobilityacrossEurope2017-2021/StudentImmigrationAcrossEurope2017-2021';">
-        <ol> <b>My Top Skills</b>
-            <li> R </li>
-            <li><i> SQL</i> </li>
-            <li>Tableau </li>
-        </ol>
 
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Srinidhi's Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/image.png" rel="icon">
+  <link href="assets/img/image.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/prof.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Srinidhi Gopalraj</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/srinidhigopalraj/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/roam.vilnius/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Awards</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Wireframe for accessibility platform - EMINENCE</a></li>
+            <li class="dropdown"><a href="#"><span>Speech</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">
+                  KC High Student Voice 2022 - Future of education - PANELLIST</a></li>
+                <li><a href="#">KC High Student Voice 2020 - Feminism and Shaping Identity - PANELLIST</a></li>
+              </ul>
+            </li>
+            <li><a href="#"> UNICEF Voices of Youth Illustration - APPRECIATION</a></li>
+            <li><a href="#">Design Hackathon 2021 - Finalist</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i class="bi bi-moon"></i> <!-- Default icon for light mode -->
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero_bg_m.jpeg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Srinidhi Gopalraj</h2>
+        <p>I'm <span class="typed" data-typed-items="A Business Analyst, A Financial Analyst, A Data Analyst">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My Vision</h2>
+        <p>magine facing a buffet of endless options but feeling paralysed by choice. This is our reality in a data-driven society. We struggle to make informed decisions with abundant data. I want to change that. 
+
+          🚀 This starts with the way we choose to infer from and handle our data, and I realised this thought through my passion in Data Analytics . While pursuing my Google Data Analytics Certification, I got a greater insight into Biases, Sampling, and Manipulation - and how one can tell many stories from the same data. </p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>&sigma;</mi> <!--math identifier like variable-->
+            <mo>=</mo> <!-- math operator -->
+            <msqrt><!--sqrt operator-->
+                <mfrac><!--creates fraction element-->
+                    <mrow>1</mrow> <!--horizonatal subgroups-->
+                    <mrow>n</mrow>
+                </mfrac>
+                <mo>&InvisibleTimes;</mo>
+                <msubsup>
+                    <mo stretchy="true">&Sigma;</mo>
+                    <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                    </mrow>
+                    <mrow>
+                        <mi>N</mi>
+                    </mrow>
+                </msubsup>
+                <mo>&InvisibleTimes;</mo>
+                <mo>(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mi>i</mi>
+                </msub>
+                <mo>-</mo>
+                <mi>&mu;</mi>
+                <mo>)</mo>
+                <msup>
+                    <mrow>
+                        <mn>2</mn> <!--numerical elements-->
+                    </mrow>
+                </msup>
+            </msqrt>
+        </math>
+        <p>💡 Better yet, understood how I can tell a good analysis from a bad one. I developed keen eye.</p>
+        <div class="clock" id="clock">00:00:00</div>
+        <div id="star-section">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" fill="gold">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+          </svg>
+        </div>
+        
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/prof.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>A Business and Financial Analyst</h2>
+            <p class="fst-italic py-3">
+              A Google Certified Data Analyst
+            </p>
+            <div class="row">
+            <a href="https://public.tableau.com/app/profile/srinidhi.gopalraj/viz/StudentImmigrationandMobilityacrossEurope2017-2021/StudentImmigrationAcrossEurope2017-2021" class="active"><i class="bi bi-house navicon"></i>Project Link : Insight into Immigration</a>
+            </div>
+              <ul>
+               <li>1. Inbound Mobility and Immigration into Europe </li>
+                <li>2. Outbound Mobility numbers for host countries immigrating into europe</li>
+                <li>3. Rate of student Inbound mobility as the percentage of all mobility, categorized by sex</li>
+              </ul>
+              All of the data was acquired from different data sources within UNESCO Institute for Statistics.
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Work Experience</h3>
+
+            <div class="resume-item pb-0">
+              <h4>COmpetitive Intelligence Extern, Extern</h4>
+              <p><em>Advertising, Gap Analysis etc.</em></p>
+              <ul>
+                <li>Researching and evaluating effectiveness of AD strategies and revenue mechanisms</li>
+                <li>Reccomending and presenting strategies for Expedia Group Media Solutions- Researching and evaluating effectiveness of AD strategies and revenue mechanisms - Reccomending and presenting strategies for Expedia Group Media Solutions
+                </li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>BSc. ICT </h4>
+              <h5>2023 - 2027</h5>
+              <p><em>VIlnius Tech</em></p>
+              <p>9.6 G.P.A</p>
+            </div><!-- Edn Resume Item -->
+
+    
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item">
+              <h4>Google Certified Data Analytics Professional Certificate</h4>
+              <ul>
+                <li>Skilled in Tableau, SQL, Database Handling, R, and Google BigQuery for data cleaning, analysis, visual- ization, and governance, with experience in st</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Business and Data Analytics, Microsoft</h4>
+              <ul>
+                <li>Utilized Power BI to transform data into insights, enhancing my understanding of the business and invest- ment landscape. Analytical thinking, Time management.
+                </li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section ">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects and Events</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-project">Project</li>
+            <li data-filter=".filter-event">Event</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-project">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/proj1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Proj 1</h4>
+                  <p>data analysis</p>
+                  <a href="assets/img/proj1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-event">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/eye.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>event 1</h4>
+                  <p>eye vilnius</p>
+                  <a href="assets/img/eye.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+  </main>
+
+  <footer id="footer" class="footer position-relative ">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/functions.js"></script>
+
+</body>
+
 </html>
