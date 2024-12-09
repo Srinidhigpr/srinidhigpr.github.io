@@ -820,3 +820,75 @@ svg {
 svg:hover {
   transform: scale(1.2);
 }
+
+.form-container {
+  max-width: auto;
+  margin: auto;
+  }
+  
+label {
+display: block;
+margin: 10px 0 5px;
+}
+
+input, select {
+width: 100%;
+padding: 8px;
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+.result {
+margin-top: 20px;
+font-weight: bold;
+}
+
+.result.green { color: green; }
+.result.orange { color: orange; }
+.result.red { color: red; }
+
+.style-button {
+background-color: yellow; 
+border: none;
+color: #333;
+font-size: 18px;
+font-weight: bold;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 10px 0;
+cursor: pointer;
+border-radius: 50%; 
+position: relative;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.style-button::before {
+font-size: 24px;
+color: gold;
+position: absolute;
+top: -10px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.style-button:hover {
+transform: scale(1.1); 
+box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); 
+}
+
+.style-button:active {
+transform: scale(0.95); 
+box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); 
+}
+  

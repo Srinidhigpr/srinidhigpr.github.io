@@ -274,6 +274,92 @@ function updateClock() {
 
   clockElement.textContent = `${hours}:${minutes}:${seconds}`;
 }
+function updateSliderValue(id) {
+  document.getElementById(`${id}Value`).innerText = document.getElementById(id).value;
+}
+
+function validateForm(data) {
+// Validate email
+if (!data.email.includes('@') || !data.email.includes('.')) {
+  alert('Please enter a valid email address.');
+  return false;
+}
+
+// Validate phone
+if (!/^[0-9]{9}$/.test(data.phone)) {
+  alert('Please enter a valid 10-digit phone number.');
+  return false;
+}
+
+// Validate address fields
+const trimmedStreet = data.street.trim();
+const trimmedCity = data.city.trim();
+const trimmedZip = data.zip.trim();
+
+if (!trimmedStreet || !trimmedCity || !trimmedZip) {
+  alert('Please complete all address fields.');
+  return false;
+}
+
+return true;
+}
+
+
+
+function submitForm() {
+  const street = document.getElementById('street')?.value || '';
+  const city = document.getElementById('city')?.value || '';
+  const zip = document.getElementById('zip')?.value || '';
+
+  const data = {
+    firstName: document.getElementById('firstName')?.value || '',
+    lastName: document.getElementById('lastName')?.value || '',
+    email: document.getElementById('email')?.value || '',
+    phone: document.getElementById('phone')?.value || '',
+    street,
+    city,
+    zip,
+    address: `${street}, ${city}, ${zip}`,
+    ratings: [
+      Number(document.getElementById('q1')?.value || 0),
+      Number(document.getElementById('q2')?.value || 0),
+      Number(document.getElementById('q3')?.value || 0),
+      Number(document.getElementById('q4')?.value || 0),
+      Number(document.getElementById('q5')?.value || 0),
+    ],
+  };
+
+  console.log('Debug Data:', data);
+
+  if (!validateForm(data)) {
+    console.log('Validation failed.');
+    return;
+  }
+
+  const average =
+    data.ratings.reduce((sum, rating) => sum + rating, 0) / data.ratings.length;
+
+  // Determine the color of the average
+  let averageColor = '';
+  if (average >= 7.2) averageColor = 'green';
+  else if (average >= 3.5) averageColor = 'orange';
+  else averageColor = 'red';
+
+  const resultsDiv = document.getElementById('results');
+  resultsDiv.innerHTML = `
+    <p>First Name: ${data.firstName}</p>
+    <p>Last Name: ${data.lastName}</p>
+    <p>Email: ${data.email}</p>
+    <p>Phone: ${data.phone}</p>
+    <p>Address: ${data.address}</p>
+    <p>
+      ${data.firstName} ${data.lastName} (${data.email}): 
+      <span style="color: ${averageColor}; font-weight: bold;">
+        ${average.toFixed(1)}
+      </span>
+    </p>
+  `;
+}
 
 
 updateClock();

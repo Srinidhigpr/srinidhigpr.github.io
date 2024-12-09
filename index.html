@@ -44,6 +44,9 @@
     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/srinidhigopalraj/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="https://www.instagram.com/roam.vilnius/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i class="bi bi-moon"></i> <!-- Default icon for light mode -->
+      </button>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -67,9 +70,6 @@
           </ul>
         </li>
       </ul>
-      <button id="theme-toggle" aria-label="Toggle theme">
-        <i class="bi bi-moon"></i> <!-- Default icon for light mode -->
-      </button>
     </nav>
   </header>
 
@@ -97,41 +97,44 @@
 
           🚀 This starts with the way we choose to infer from and handle our data, and I realised this thought through my passion in Data Analytics . While pursuing my Google Data Analytics Certification, I got a greater insight into Biases, Sampling, and Manipulation - and how one can tell many stories from the same data. </p>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <mi>&sigma;</mi> <!--math identifier like variable-->
-            <mo>=</mo> <!-- math operator -->
-            <msqrt><!--sqrt operator-->
-                <mfrac><!--creates fraction element-->
-                    <mrow>1</mrow> <!--horizonatal subgroups-->
-                    <mrow>n</mrow>
+            <mi>&sigma;</mi> <!-- Math identifier like var -->
+            <mo>=</mo> <!-- Math operator -->
+            <msqrt> <!-- Square root operator -->
+                <mfrac> <!-- Fraction -->
+                    <mn>1</mn> <!-- Numerator (1) -->
+                    <mi>n</mi> <!-- Denominator (n) -->
                 </mfrac>
-                <mo>&InvisibleTimes;</mo>
-                <msubsup>
-                    <mo stretchy="true">&Sigma;</mo>
-                    <mrow>
-                        <mi>i</mi>
-                        <mo>=</mo>
-                        <mn>1</mn>
-                    </mrow>
-                    <mrow>
-                        <mi>N</mi>
-                    </mrow>
+                <mo>&InvisibleTimes;</mo> 
+                <msubsup> <!-- Summation with limits -->
+                    <mo>&Sigma;</mo> 
+                    <mi>i</mi> <!-- Subscript -->
+                    <mi>N</mi> <!-- Superscript -->
                 </msubsup>
-                <mo>&InvisibleTimes;</mo>
-                <mo>(</mo>
-                <msub>
-                  <mi>x</mi>
-                  <mi>i</mi>
+                <mo>&InvisibleTimes;</mo> 
+                <mo>(</mo> 
+                <msub> <!-- Subscript -->
+                    <mi>x</mi>
+                    <mi>i</mi> <!-- Subscript for x -->
                 </msub>
-                <mo>-</mo>
-                <mi>&mu;</mi>
-                <mo>)</mo>
-                <msup>
-                    <mrow>
-                        <mn>2</mn> <!--numerical elements-->
+                <mo>-</mo> 
+                <mi>&mu;</mi> 
+                <mo>)</mo> 
+                <msup> 
+                    <mrow> <!-- horizonatal grouping -->
+                        <mo>(</mo>
+                        <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                        </msub>
+                        <mo>-</mo>
+                        <mi>&mu;</mi>
+                        <mo>)</mo>
                     </mrow>
+                    <mn>2</mn> 
                 </msup>
             </msqrt>
         </math>
+        
         <p>💡 Better yet, understood how I can tell a good analysis from a bad one. I developed keen eye.</p>
         <div class="clock" id="clock">00:00:00</div>
         <div id="star-section">
@@ -275,7 +278,69 @@
             </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
-
+          <section id="contact" class="portfolio section ">
+          <div class="form-container">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              
+            </div>
+            <div class="container section-title" data-aos="fade-up">
+              <h2>Hire a Business Analyst!</h2>
+            </div>
+            <form id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Srinidhi" required >
+            
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Gopalraj" required >
+            
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="sg@gmail.com" required>
+            
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="XXX-xxxxxx" required pattern="^[0-9]{9}$">
+            
+                <label>Address </label>
+                <label for="street">Street:</label>
+                <input type="text" id="street" placeholder="Street" required>
+    
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="City" required>
+    
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" placeholder="ZIP Code" required>
+    
+            
+                <div class="slider-container">
+                    <label>How likely are you to hire a business analyst ? : <span id="q1Value">5</span></label>
+                    <input type="range" id="q1" class="slider" min="1" max="10" value="5" oninput="updateSliderValue('q1')">
+                </div>
+            
+                <div class="slider-container">
+                    <label>How often do you use PowerBI, Tableau ? : <span id="q2Value">5</span></label>
+                    <input type="range" id="q2" class="slider" min="1" max="10" value="5" oninput="updateSliderValue('q2')">
+                </div>
+            
+                <div class="slider-container">
+                    <label>Rate your pay compared to industry average : <span id="q3Value">5</span></label>
+                    <input type="range" id="q3" class="slider" min="1" max="10" value="5" oninput="updateSliderValue('q3')">
+                </div>
+            
+                <div class="slider-container">
+                    <label>Rate your employee retention : <span id="q4Value">5</span></label>
+                    <input type="range" id="q4" class="slider" min="1" max="10" value="5" oninput="updateSliderValue('q4')">
+                </div>
+            
+                <div class="slider-container">
+                    <label>rate your satisfaction with this form : <span id="q5Value">5</span></label>
+                    <input type="range" id="q5" class="slider" min="1" max="10" value="5" oninput="updateSliderValue('q5')">
+                </div>
+            
+                <button type="button" class="style-button" onclick="submitForm()">Submit</button>
+            </form>
+        
+            <div id="results"></div>
+          </div>
+          </section>
         </div>
 
       </div>
